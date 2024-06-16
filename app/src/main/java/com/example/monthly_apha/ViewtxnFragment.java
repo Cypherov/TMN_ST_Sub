@@ -41,11 +41,10 @@ public class ViewtxnFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-
     public ViewtxnFragment() {
         // Required empty public constructor
     }
-
+//commit
     /**
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
@@ -93,7 +92,6 @@ public class ViewtxnFragment extends Fragment {
         // Convert LocalDate to long (timestamp)
         long startDate = firstDayOfMonth.atStartOfDay(ZoneId.systemDefault()).toInstant().toEpochMilli();
         long endDate = lastDayOfMonth.atStartOfDay(ZoneId.systemDefault()).toInstant().toEpochMilli();
-
 
         fb FB= fb.getInstance();
         DatabaseReference transactionsRef = FB.getTxnRef();

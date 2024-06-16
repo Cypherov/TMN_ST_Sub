@@ -28,7 +28,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 public class MainActivity extends AppCompatActivity {
 
     Button btnLogin, btnRegister, btnAddTxn, btnSignout,btnViewTxn,btnReport, btnViewSms, btnManageBudget;
-    TextView textView, tvDailyLimit, tvDailySpending;
+    TextView textView, tvDailyLimit, tvDailySpending; //ssss
 
     private SharedPreferences sharedPreferences;
     private SharedPreferences.OnSharedPreferenceChangeListener preferenceChangeListener;
