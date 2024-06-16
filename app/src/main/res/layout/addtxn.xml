@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".addTxn"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:gravity="center"
+    >
+
+    <EditText
+        android:id="@+id/note"
+        android:hint="Note"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edit_text_background"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:inputType="text"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textColorHint="#393939"/>
+
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/edit_text_background"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:hint="Amount"
+        android:inputType="numberDecimal"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textColorHint="#393939"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="202dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Date DD/MM"
+            android:inputType="date"
+            android:paddingStart="16dp"
+            android:paddingTop="12dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="#393939"
+            android:textSize="16sp" />
+
+
+        <CheckBox
+            android:id="@+id/autoDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auto Date"
+            android:button="@drawable/custom_checkbox"
+            android:textSize="16sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:layout_margin="8dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Category:" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        >
+
+    </Spinner>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="395dp">
+
+        <Button
+            android:id="@+id/btnAddCat"
+            android:layout_width="76dp"
+            android:layout_height="30dp"
+            android:background="@drawable/rounded_orange"
+            android:text="Add New Category"
+            android:textAllCaps="false"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnEditCat"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btnEditCat"
+            android:layout_width="76dp"
+            android:layout_height="30dp"
+            android:background="@drawable/rounded_orange"
+            android:text="Edit"
+            android:textAllCaps="false"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btnDeleteCat"
+            android:layout_width="76dp"
+            android:layout_height="30dp"
+            android:background="@drawable/rounded_orange"
+            android:text="Delete"
+            android:textAllCaps="false"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnEditCat"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/white"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Account:" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"></Spinner>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="395dp">
+
+        <Button
+            android:id="@+id/btnAddAcc"
+            android:layout_width="76dp"
+            android:layout_height="30dp"
+            android:background="@drawable/rounded_orange"
+            android:text="Add New Category"
+            android:textAllCaps="false"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnEditAcc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btnEditAcc"
+            android:layout_width="76dp"
+            android:layout_height="30dp"
+            android:background="@drawable/rounded_orange"
+            android:text="Edit"
+            android:textAllCaps="false"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btnDeleteAcc"
+            android:layout_width="76dp"
+            android:layout_height="30dp"
+            android:background="@drawable/rounded_orange"
+            android:text="Delete"
+            android:textAllCaps="false"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnEditAcc"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/white"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/paid"
+            android:layout_marginLeft="30dp"
+            android:layout_width="194dp"
+            android:layout_height="75dp"
+            android:text="Paid"
+            android:button="@drawable/custom_checkbox"
+            android:textSize="16sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:layout_margin="8dp"/>
+
+        <CheckBox
+            android:id="@+id/toBePaid"
+            android:layout_width="163dp"
+            android:layout_height="68dp"
+            android:text="To be Paid"
+            android:button="@drawable/custom_checkbox"
+            android:textSize="16sp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:layout_margin="8dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addTxn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_orange"
+        android:text="Add TXN" />
+
+
+
+</LinearLayout>

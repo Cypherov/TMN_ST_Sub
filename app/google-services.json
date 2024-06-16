@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "674124803538",
+    "project_id": "expenditure-tracker-mobile-app",
+    "storage_bucket": "expenditure-tracker-mobile-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:674124803538:android:00ff7a00f5e98034ac2c0b",
+        "android_client_info": {
+          "package_name": "com.example.monthly_apha"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5HuPE38a5U0PtylUm8SYA_XtLVbcsOjI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

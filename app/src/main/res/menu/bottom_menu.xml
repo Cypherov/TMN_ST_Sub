@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_filled_24"/>
+
+    <item
+        android:id="@+id/shorts"
+        android:title="Txns"
+        android:icon="@drawable/baseline_attach_money_24"/>
+
+    <item
+        android:id="@+id/fab"
+        android:title=""
+        android:enabled="false"/>
+
+    <item
+        android:id="@+id/subscriptions"
+        android:title="Sms"
+        android:icon="@drawable/baseline_mark_chat_unread_24"/>
+
+    <item
+        android:id="@+id/library"
+        android:title="Settings"
+        android:icon="@drawable/baseline_edit_24"/>
+
+</menu>

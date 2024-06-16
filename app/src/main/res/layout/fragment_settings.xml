@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/settingscredit"
+    tools:context=".SettingsFragment">
+
+    <!-- TODO: Update blank fragment layout
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Settings"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/white"/>
+        -->
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".SettingsFragment"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:gravity="top">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp"
+            android:background="@drawable/custom_edittext">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:padding="24dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Manage Spending Budget"
+                    android:id="@+id/loginText"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/orange"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/discurrentspendingbudget"
+                        android:layout_width="191dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/text_view_background"
+                        android:gravity="center_horizontal"
+                        android:text="Current Spending Budget:"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/tvcurrentbudget"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center"
+                        android:background="@drawable/text_view_transparent"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/black" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/dissetbudget"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/text_view_background"
+                        android:gravity="center_horizontal"
+                        android:text="Set Budget:"
+                        android:textSize="18dp"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/etsetBudget"
+                        android:layout_width="0dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="2"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="Monthly Spending"
+                        android:inputType="numberDecimal"
+                        android:gravity="center_horizontal"
+                        android:paddingStart="16dp"
+                        android:paddingTop="12dp"
+                        android:paddingEnd="16dp"
+                        android:paddingBottom="12dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#393939"
+                        android:textSize="16sp" />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btnSetBudget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_orange"
+                    android:text="Set New Monthly Spending Budget"
+                    android:textAllCaps="false"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:textColor="@color/white"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <Button
+            android:id="@+id/btnReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Report Issue"
+            android:background="@drawable/rounded_blue"
+            android:textColor="@color/white"
+            android:layout_marginTop="100dp"/>
+        <Button
+            android:id="@+id/btnsignout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Out"
+            android:background="@drawable/rounded_blue"
+            android:textColor="@color/white"
+            android:layout_marginTop="8dp"/>
+        <Button
+            android:id="@+id/btnadmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/admin_24"
+            android:textSize="15dp"
+            android:text="Access Admin Interface"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
